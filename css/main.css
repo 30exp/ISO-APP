@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background-color: red;
+  font-family: courier-prime,monospace;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #212121;
+  line-height: 1.5; }
+
+.home {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  place-items: center;
+  text-align: center;
+  color: #ccc;
+  padding: 3rem;
+  transition: all .4s;
+  z-index: 1; }
+  .home h1 {
+    margin: 0;
+    font-family: jubilat,serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1; }
+  .home p {
+    font-size: .5rem; }
+  .home button {
+    border: 0;
+    background-color: #212121;
+    color: #fff;
+    line-height: 3;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px; }
+
+.open {
+  transform: translateY(-100%); }
+
+main {
+  height: 100%; }
+  main p {
+    margin: 0; }
+  main .top {
+    height: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: .1fr .1fr .1fr 3fr 1fr;
+    place-items: center;
+    text-align: center; }
+    main .top .n-zero {
+      font-size: .5rem; }
+    main .top .today-date {
+      font-size: 1rem; }
+    main .top .now {
+      font-size: 15rem;
+      font-family: bd-kickrom-mono,sans-serif;
+      font-weight: 400;
+      font-style: normal; }
+    main .top .location {
+      text-transform: uppercase;
+      font-size: .5rem; }
+    main .top .secondary {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3 1fr);
+      place-items: center; }
+      main .top .secondary p {
+        font-size: 1rem; }
+      main .top .secondary .col {
+        display: grid;
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: 1fr;
+        place-items: center; }
+  main .bottom {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(6, 1fr); }
+    main .bottom .col {
+      display: grid;
+      grid-template-columns: repeat(5, 20vw);
+      grid-template-rows: 1fr;
+      place-items: center; }
+      main .bottom .col:nth-child(odd) {
+        background: rgba(0, 0, 0, 0.1); }
+    main .bottom .icon {
+      font-size: 1.5rem; }
+
+.rainy {
+  background-color: #235D84; }
+
+.cloudy {
+  background-color: #DBDBDB; }
+
+.sunny {
+  background-color: #F9CD93; }
+
+.clear {
+  background-color: #000000; }
+
+/*# sourceMappingURL=main.css.map */
